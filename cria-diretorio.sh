@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 DIR="/home/lucas-pc/devops/exercicios"
 ARQUIVO="$DIR/bash"
 CONTEUDO="enviando conteudo para o arquivo"
