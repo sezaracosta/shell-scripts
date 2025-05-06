@@ -1,7 +1,11 @@
 #!/bin/bash
 
-  if    ping -c 10 google.com.br ; then
-           echo "Comando executado com sucesso!"
-  else
-           echo "Ocorreu um erro durante a execução!"
-  fi
+#!/bin/bash
+
+ping -c 2 google.com &> /dev/null
+
+if [ $? -eq 0 ]; then
+  echo "Google está online"
+else
+  echo "Google está offline"
+fi
